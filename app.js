@@ -3,7 +3,7 @@ const imgContainer = document.getElementById("img-container");
 // make a function that calls our API to get the array of images
 async function getImages() {
   // make the fetch
-  const res = await fetch("http://localhost:8080/images");
+  const res = await fetch("https://handsome-faces-server.onrender.com/images");
 
   // get the json from the response
   const data = await res.json();
